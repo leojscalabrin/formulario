@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color: #3F3D56;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form{
+    width: 515px;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 37px;
+    margin-bottom: 31px;
+    text-align: center;
+}
+
+.label-text {
+    font-size: 14px;
+    text-transform: capitalize;
+    margin-bottom: 6px;
+    display: inline-block;
+}
+
+
+.text {
+    border: 1px solid #ABB3AB;
+    width: 100%;
+    padding: 16px;
+    height: 47px;
+    box-sizing: border-box;
+}
+
+.box.first {
+    margin-bottom: 39px;
+}
+
+.box.second{
+    margin-bottom: 26px;
+}
+
+.connect {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 31px;
+}
+
+.connect-check {
+    margin-right: 8px;
+    height: 18px;
+    width: 18px;
+}
+
+.connect-label {
+    font-size: 14px;
+}
+
+.forgot {
+    font-size: 14px;
+    color: #1DB9E0;
+    text-decoration: none;
+    transition-duration: 200ms;
+}
+
+.forgot:hover {
+    color: rgba(29, 186, 226, 0.9);
+}
+
+.send {
+    height: 47px;
+    background-color: #3F3D56;
+    font-weight: 500;
+    font-size: 16px;
+    color: #FFFFFF;
+    border: none;
+    margin-bottom: 32px;
+}
+
+.signin {
+    text-align: center;
+    font-size: 14px;
+}
+
+.signin-link {
+    color: #1DB9E0;
+    text-decoration: none;
+}
