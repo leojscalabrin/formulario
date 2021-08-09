@@ -4,57 +4,73 @@
 
 <body>
     <section class="container">
-        <form>
+        <form class="signin-form">
             <h1>Faça seu cadastro</h1>
 
-            <div class="box">
+            <div class="box margin">
                 <label for="name" class="label-text">Nome completo</label>
                 <input class="text" type="text" id='name' placeholder="Digite seu e-mail">
             </div>
 
-            <label for="date">Data de Nascimento</label>
-            <input type="date" name="date" id="date">
-            
-            <label for="country">País</label>
-            <select>
-                <option value="brasil">Brasil</option>
-                <option value="japao">Japão</option>
-                <option value="italia">Itália</option>
-            </select>
+            <div class="box-double">
+                <div class="box-date">
+                    <label for="date">Data de Nascimento</label>
+                    <input type="date" name="date" id="date" class="date">
+                </div>
 
-            <div class="box">
-                <label for="gender">Gênero</label>
-                <input type="radio" name="radio" id="masc">
-                <label for="masc">Masculino</label>
-
-                <input type="radio" name="radio" id="fem">
-                <label for="fem">Feminino</label>
-
-                <input type="radio" name="radio" id="not">
-                <label for="not">Não declarar</label>
+                <div class="box-country">
+                    <label for="country" class="country-label">País</label>
+                    <select class="country">
+                        <option value="brasil">Brasil</option>
+                        <option value="japao">Japão</option>
+                        <option value="italia">Itália</option>
+                    </select>
+                </div>
             </div>
 
-            <div class="box">
+            <div class="box margin">
+                <label for="gender">Gênero</label>
+                <div class="box-gender">
+                    <div class="wrapper">
+                        <input type="radio" name="radio" id="masc">
+                        <label for="masc">Masculino</label>
+                    </div>
+
+                    <div class="wrapper">
+                        <input type="radio" name="radio" id="fem">
+                        <label for="fem">Feminino</label>
+                    </div>
+
+                    <div class="wrapper">
+                        <input type="radio" name="radio" id="not">
+                        <label for="not">Não declarar</label>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="box margin">
                 <label for="email" class="label-text">E-mail</label>
                 <input class="text" type="text" id='email' placeholder="Digite seu e-mail">
             </div>
-    
-            <div class="box">
+
+            <div class="box margin">
                 <label for="password" class="label-text">senha</label>
                 <input class="text" type="password" id="password" placeholder="Digite sua senha">
             </div>
 
-            <div class="box">
+            <div class="box margin">
                 <label for="password" class="label-text">Confirme sua senha</label>
                 <input class="text" type="password" id="password" placeholder="Digite sua senha">
             </div>
 
-            <div>
-                <input type="checkbox" name="accept" id="accept">
-                <span>Aceito os <a href="#">Termos e condições</a> e concordo com as <a href="#"> políticas de privacidade</a> do Hall To Code.</span>
+            <div class="accept-container">
+                <input type="checkbox" name="accept" id="accept" class="accept">
+                <span class="accept-span">Aceito os <a href="#" class="accept-link">Termos e condições</a> e concordo com as <a href="#" class="accept-link"> políticas de
+                        privacidade</a> do Hall To Code.</span>
             </div>
 
-            <button type="submit">Cadastrar</button>
+            <button type="submit" class="send">Cadastrar</button>
 
             <span class="signin">Já tem uma conta no Hall To Code?
                 <a href="#" class="signin-link">Entre agora</a>
