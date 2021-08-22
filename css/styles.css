@@ -86,6 +86,7 @@ h1 {
     color: #FFFFFF;
     border: none;
     margin-bottom: 32px;
+    cursor: pointer;
 }
 
 .signin {
@@ -182,3 +183,8 @@ h1 {
     color: #1DB9E0;
 }
 
+.recover-text {
+    color: #5A6256;
+    font-weight: 400;
+    font-size: 16px;
+}
