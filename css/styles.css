@@ -42,6 +42,40 @@ h1 {
     box-sizing: border-box;
 }
 
+.errorText{
+    display:none;
+}
+
+.errorText.show{
+    display: inline-block;
+
+    animation-name: error;
+    animation-duration: 250ms;
+    animation-iteration-count: 3;
+    
+    color: rgba(151, 0, 0, 0.75);
+}
+
+/* a página está dando refresh após pressionar o botão porque os campos estão sem required */
+
+@keyframes error{
+    0%{
+        transform: translateX(0)
+    }
+    25%{
+        transform: translateX(-5%)
+    }
+    50%{
+        transform: translateX(0)
+    }
+    75%{
+        transform: translateX(5%)
+    }
+    100%{
+        transform: translateX(0)
+    }
+}
+
 .box.first {
     margin-bottom: 39px;
 }
@@ -87,6 +121,26 @@ h1 {
     border: none;
     margin-bottom: 32px;
     cursor: pointer;
+}
+
+.send:hover{
+    animation-name: buttonColor;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+}
+
+@keyframes buttonColor{
+    33% {
+        background: rgb(251, 210, 133);
+    }
+
+    66% {
+        background: rgb(251, 182, 52);
+    }
+    
+    100% {
+        background: rgb(223, 145, 0);
+    }
 }
 
 .signin {
@@ -136,6 +190,10 @@ h1 {
     height: 47px;
     padding: 12px 14px;
     border: 1px solid #ABB3AB;
+}
+
+.date-label{
+    margin-bottom: 9px;
 }
 
 .country {

@@ -10,12 +10,14 @@
             <div class="box margin">
                 <label for="name" class="label-text">Nome completo</label>
                 <input class="text" type="text" id='name' placeholder="Digite seu e-mail">
+                <span class="errorText">Prencha este campo!</span>
             </div>
 
             <div class="box-double">
                 <div class="box-date">
-                    <label for="date">Data de Nascimento</label>
+                    <label for="date" class="date-label">Data de Nascimento</label>
                     <input type="date" name="date" id="date" class="date">
+                    <span class="errorText">Prencha este campo!</span>
                 </div>
 
                 <div class="box-country">
@@ -25,7 +27,9 @@
                         <option value="japao">Japão</option>
                         <option value="italia">Itália</option>
                     </select>
+                    <span class="errorText">Prencha este campo!</span>
                 </div>
+                
             </div>
 
             <div class="box margin">
@@ -45,23 +49,26 @@
                         <input type="radio" name="radio" id="not">
                         <label for="not">Não declarar</label>
                     </div>
-
                 </div>
+                <span class="errorText">Prencha este campo!</span>
             </div>
 
             <div class="box margin">
                 <label for="email" class="label-text">E-mail</label>
                 <input class="text" type="text" id='email' placeholder="Digite seu e-mail">
+                <span class="errorText">Prencha este campo!</span>
             </div>
 
             <div class="box margin">
                 <label for="password" class="label-text">senha</label>
                 <input class="text" type="password" id="password" placeholder="Digite sua senha">
+                <span class="errorText">Prencha este campo!</span>
             </div>
 
             <div class="box margin">
                 <label for="password" class="label-text">Confirme sua senha</label>
                 <input class="text" type="password" id="password" placeholder="Digite sua senha">
+                <span class="errorText">Prencha este campo!</span>
             </div>
 
             <div class="accept-container">
@@ -80,3 +87,4 @@
 
 
 </body>
+<script src="/index.js"></script>
